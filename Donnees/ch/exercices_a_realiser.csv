@@ -1,0 +1,32 @@
+item_id,mot / stimulus,type,position_du_/ʃ/,Nombre de phonèmes,Forme,Voyelle_précédente,Classe_voyelle_précédente,voyelle_suivante,classe_voyelle_suivante
+ISO01,– CH prolongé (2 secondes),Phonème,Isolée,1,C,Aucune,Aucune,Aucune,Aucune
+SYL01,cha,syllabe,Initiale,2,CV,-,,A,antérieure
+SYL02,chi,syllabe,Initiale,2,CV,-,,I,Antérieure
+SYL03,cho,syllabe,Initiale,2,CV,-,,O,Postérieure
+W_I01,Chat,Mot,Initiale,2,CV,-,,A,antérieure
+W_I02,Chien,Mot,Initiale,3,CVV,-,,I,Antérieure
+W_I03,Chaise,Mot,Initiale,3,CVC,-,,/,
+W_I04,Chaussure,Mot,Initiale,5,CVCVC,-,,O,Postérieure
+W_I05,Chapeau,Mot,Initiale,4,CVCV,-,,A,antérieure
+W_I06,Cheval,Mot,Initiale,5,CVCVC,-,,E,Centrale
+W_M01 –,machine,Mot,Médiane,5,CVCVC,A,antérieure,I,Antérieure
+W_M02,– bouchon,Mot,Médiane,4,CVCV,Ou,Postérieure,On,Postérieure
+W_M03,– echelle,Mot,Médiane,4,VCVC,É,antérieure,È,antérieure
+W_M04,– tee-shirt,Mot,Médiane,5,CVCVCC,I,Antérieure,Oeu,
+W_M05,– fourchette,Mot,Médiane,6,CVCCVC,,,È,antérieure
+W_M06,– rocher,Mot,Médiane,4,CVCV,O,Postérieure,É,antérieure
+W_F01,bouche,Mot,Finale,3,CVC,Ou,Postérieure,-,
+W_F02,– fleche,Mot,Finale,4,CCVC,È,antérieure,-,
+W_F03,– niche,Mot,Finale,3,CVC,I,Antérieure,-,
+W_F04,– manche,Mot,Finale,3,CVC,An,Centrale,-,
+W_F05,– vache,Mot,Finale,3,CVC,A,antérieure,-,
+W_F06,– poche,Mot,Finale,3,CVC,O,Postérieure,-,
+P01 –,chouquette a la creme,Phrase,Initiale,12,CVCVCVCVCCVC,-,,Ou,Postérieure
+• P02,chocolat au lait,Phrase,Initiale,9,CVCVCVVCV,-,,O,Postérieure
+• P03,Charriot de courses,Phrase,Initiale,11,CVCVVCVCVCC,-,,A,antérieure
+• P04,La fourchette tombe,Phrase,Médiane,12,CVCVCCVCCVC,R,,È,antérieure
+• P05,Le bouchon est bleu,Phrase,Médiane,10,CVCVCVVCCV,Ou,Postérieure,On,Postérieure
+• P06,Il lave le tee-shirt,Phrase,Médiane,13,VCCVCCVCVCVCC,I,Antérieure,E,Centrale
+• P07,Il dort dans la niche,Phrase,Finale,12,VCCVCCVCVCVC,I,Antérieure,-,
+• P08,Elle colorie une vache,Phrase,Finale,13,VCCVCVCVVCCVC,A,antérieure,-,
+• P09,Le garcon peche,Phrase,Finale,10,CVCVCCVCVC,È,antérieure,-,
