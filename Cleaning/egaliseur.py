@@ -5,11 +5,7 @@
 egaliseur.py
 
 But :
-- Appliquer un traitement simple de voix sur des fichiers WAV :
-  - coupe-bas
-  - EQ correctif
-  - compression
-  - normalisation
+- Normalisation de la voix des patients
 - Fonctionne sur un fichier unique ou sur tout un dossier.
 
 Exemples :

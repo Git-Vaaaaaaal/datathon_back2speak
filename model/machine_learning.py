@@ -1,4 +1,4 @@
-""" 
+"""
 Machine Learning utilisant les features du son
 Lien : https://github.com/musikalkemist/AudioSignalProcessingForML
 But : Extraire toutes les features dans un audio et l'utiliser dans des algorithmes de classification (machine_learning) / petit réseau de neurone
@@ -20,17 +20,17 @@ sound, sr = librosa.load(sound)
 FRAME_SIZE = 1024
 HOP_LENGTH = 512
 
-#Calculer l'amplitude d'enveloppe
+# Calculer l'amplitude d'enveloppe
 def amplitude_envelope(signal, frame_size, hop_length):
     """Calculate the amplitude envelope of a signal with a given frame size nad hop length."""
     amplitude_envelope = []
-    
+
     # calculate amplitude envelope for each frame
-    for i in range(0, len(signal), hop_length): 
-        amplitude_envelope_current_frame = max(signal[i:i+frame_size]) 
+    for i in range(0, len(signal), hop_length):
+        amplitude_envelope_current_frame = max(signal[i:i+frame_size])
         amplitude_envelope.append(amplitude_envelope_current_frame)
-    
-    return np.array(amplitude_envelope)    
+
+    return np.array(amplitude_envelope)
 
 
 def fancy_amplitude_envelope(signal, frame_size, hop_length):
@@ -61,12 +61,12 @@ rms_sound = librosa.feature.rms(y=sound, frame_length=FRAME_SIZE, hop_length=HOP
 #RMSE from scratch
 def rmse(signal, frame_size, hop_length):
     rmse = []
-    
+
     # calculate rmse for each frame
-    for i in range(0, len(signal), hop_length): 
+    for i in range(0, len(signal), hop_length):
         rmse_current_frame = np.sqrt(sum(signal[i:i+frame_size]**2) / frame_size)
         rmse.append(rmse_current_frame)
-    return np.array(rmse)  
+    return np.array(rmse)
 
 #Zero-crossing rate (librosa)
 zcr_sound = librosa.feature.zero_crossing_rate(sound, frame_length=FRAME_SIZE, hop_length=HOP_LENGTH)[0]
@@ -81,10 +81,10 @@ Y_scale = np.abs(S_sound) ** 2 #Calcul le spectrogram
 
 def plot_spectrogram(Y, sr, hop_length, y_axis="linear"):
     plt.figure(figsize=(25, 10))
-    librosa.display.specshow(Y, 
-                             sr=sr, 
-                             hop_length=hop_length, 
-                             x_axis="time", 
+    librosa.display.specshow(Y,
+                             sr=sr,
+                             hop_length=hop_length,
+                             x_axis="time",
                              y_axis=y_axis)
     plt.colorbar(format="%+2.f")
 
@@ -110,7 +110,7 @@ mfccs_features = np.concatenate((mfccs, delta_mfccs, delta2_mfccs)) #concatenati
 #Calculate band energy ratio
 def calculate_split_frequency_bin(split_frequency, sample_rate, num_frequency_bins):
     """Infer the frequency bin associated to a given split frequency."""
-    
+
     frequency_range = sample_rate / 2
     frequency_delta_per_bin = frequency_range / num_frequency_bins
     split_frequency_bin = math.floor(split_frequency / frequency_delta_per_bin)
@@ -121,21 +121,21 @@ split_frequency_bin = calculate_split_frequency_bin(2000, 22050, 1025)
 
 def band_energy_ratio(spectrogram, split_frequency, sample_rate):
     """Calculate band energy ratio with a given split frequency."""
-    
+
     split_frequency_bin = calculate_split_frequency_bin(split_frequency, sample_rate, len(spectrogram[0]))
     band_energy_ratio = []
-    
+
     # calculate power spectrogram
     power_spectrogram = np.abs(spectrogram) ** 2
     power_spectrogram = power_spectrogram.T
-    
+
     # calculate BER value for each frame
     for frame in power_spectrogram:
         sum_power_low_frequencies = frame[:split_frequency_bin].sum()
         sum_power_high_frequencies = frame[split_frequency_bin:].sum()
         band_energy_ratio_current_frame = sum_power_low_frequencies / sum_power_high_frequencies
         band_energy_ratio.append(band_energy_ratio_current_frame)
-    
+
     return np.array(band_energy_ratio)
 
 ber_debussy = band_energy_ratio(S_sound, 2000, sr)
