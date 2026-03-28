@@ -10,6 +10,10 @@ import librosa
 import IPython.display as ipd
 import math
 
+
+
+
+
 BASE_FOLDER = "../audio_resources/"
 sound = os.path.join(BASE_FOLDER, "debussy.wav")
 
