@@ -3,7 +3,7 @@ import pandas as pd
 # Tu fais ta correspondance toi-même
 """ input = ""
 output = ""
-path_csv = "" #Chemin du csv """
+path_csv = "Donnees\ch\exercices_a_realiser.csv" #Chemin du csv """
 
 dict_syl = {
     "ISO01" : "ch",

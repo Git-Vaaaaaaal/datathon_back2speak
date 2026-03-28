@@ -1,0 +1,523 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/33680/ontologies/2026/2/untitled-ontology-258"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/33680/ontologies/2026/2/untitled-ontology-258">
+    <Prefix name="" IRI="http://www.semanticweb.org/33680/ontologies/2026/2/untitled-ontology-258/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CategorieMot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExoEnCours"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExoSuivant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phoneme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phPrecedent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phSuivant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phTravail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aCategorieMots"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPhoneme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPrecedent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aSuivant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pratique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prochainExo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aNiveau"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aPosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aTauxReussite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aTypeAnterieur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aTypeCentral"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aTypePosterieur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aTypeTravail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peutContinuer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exo2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exo3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exo4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ph1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ph2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#positionPhoneme"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#typePhAnterieur"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#typePhPosterieur"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#typePhTravail"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ExoEnCours"/>
+        <Class IRI="#Exercice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExoSuivant"/>
+        <Class IRI="#Exercice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phPrecedent"/>
+        <Class IRI="#Phoneme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phSuivant"/>
+        <Class IRI="#Phoneme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phTravail"/>
+        <Class IRI="#Phoneme"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ExoEnCours"/>
+        <NamedIndividual IRI="#Exo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExoSuivant"/>
+        <NamedIndividual IRI="#Exo2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExoEnCours"/>
+        <NamedIndividual IRI="#Exo3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExoSuivant"/>
+        <NamedIndividual IRI="#Exo4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Marie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Paul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phTravail"/>
+        <NamedIndividual IRI="#ph1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phSuivant"/>
+        <NamedIndividual IRI="#ph2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPhoneme"/>
+        <NamedIndividual IRI="#C1"/>
+        <NamedIndividual IRI="#ph1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#prochainExo"/>
+        <NamedIndividual IRI="#Exo1"/>
+        <NamedIndividual IRI="#Exo2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aCategorieMots"/>
+        <NamedIndividual IRI="#Exo3"/>
+        <NamedIndividual IRI="#C1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#prochainExo"/>
+        <NamedIndividual IRI="#Exo3"/>
+        <NamedIndividual IRI="#Exo4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pratique"/>
+        <NamedIndividual IRI="#Marie"/>
+        <NamedIndividual IRI="#Exo3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pratique"/>
+        <NamedIndividual IRI="#Paul"/>
+        <NamedIndividual IRI="#Exo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aSuivant"/>
+        <NamedIndividual IRI="#ph1"/>
+        <NamedIndividual IRI="#ph2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aNiveau"/>
+        <NamedIndividual IRI="#Exo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aTauxReussite"/>
+        <NamedIndividual IRI="#Exo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aNiveau"/>
+        <NamedIndividual IRI="#Exo3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aTauxReussite"/>
+        <NamedIndividual IRI="#Exo3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPosition"/>
+        <NamedIndividual IRI="#ph1"/>
+        <Literal>Debut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aTypeTravail"/>
+        <NamedIndividual IRI="#ph1"/>
+        <Literal>Ch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aType"/>
+        <NamedIndividual IRI="#ph2"/>
+        <Literal>a</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aCategorieMots"/>
+        <Class IRI="#Exercice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aPhoneme"/>
+        <Class IRI="#CategorieMot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aPrecedent"/>
+        <Class IRI="#Phoneme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aSuivant"/>
+        <Class IRI="#Phoneme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pratique"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prochainExo"/>
+        <Class IRI="#ExoEnCours"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aCategorieMots"/>
+        <Class IRI="#CategorieMot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aPhoneme"/>
+        <Class IRI="#phTravail"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aPrecedent"/>
+        <Class IRI="#Phoneme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aSuivant"/>
+        <Class IRI="#Phoneme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pratique"/>
+        <Class IRI="#ExoEnCours"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prochainExo"/>
+        <Class IRI="#ExoSuivant"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aTypeAnterieur"/>
+        <DataProperty IRI="#aType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aTypeCentral"/>
+        <DataProperty IRI="#aType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aTypePosterieur"/>
+        <DataProperty IRI="#aType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aTypeTravail"/>
+        <DataProperty IRI="#aType"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aNiveau"/>
+        <Class IRI="#Exercice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aPosition"/>
+        <Class IRI="#phTravail"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aTauxReussite"/>
+        <Class IRI="#Exercice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aType"/>
+        <Class IRI="#Phoneme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aTypeTravail"/>
+        <Class IRI="#phTravail"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#peutContinuer"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#aNiveau"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aPosition"/>
+        <Datatype IRI="#positionPhoneme"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aTauxReussite"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aTypeAnterieur"/>
+        <Datatype IRI="#typePhAnterieur"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aTypePosterieur"/>
+        <Datatype IRI="#typePhPosterieur"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aTypeTravail"/>
+        <Datatype IRI="#typePhTravail"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#peutContinuer"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Reussite &gt;80%</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#pratique"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/x"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#aNiveau"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/z"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#aTauxReussite"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/y"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#prochainExo"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/t"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#add">
+                <Variable IRI="/n"/>
+                <Variable IRI="/z"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#aNiveau"/>
+                <Variable IRI="/t"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#peutContinuer"/>
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Echec&lt;80</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#pratique"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/x"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#aNiveau"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/z"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#aTauxReussite"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/y"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#prochainExo"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/t"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#subtract">
+                <Variable IRI="/n"/>
+                <Variable IRI="/z"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#aNiveau"/>
+                <Variable IRI="/t"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#peutContinuer"/>
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DatatypeDefinition>
+        <Datatype IRI="#positionPhoneme"/>
+        <DataOneOf>
+            <Literal>Debut</Literal>
+            <Literal>Fin</Literal>
+            <Literal>Milieu</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#typePhAnterieur"/>
+        <DataOneOf>
+            <Literal>a</Literal>
+            <Literal>an</Literal>
+            <Literal>ein</Literal>
+            <Literal>i</Literal>
+            <Literal>in</Literal>
+            <Literal>on</Literal>
+            <Literal>un</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#typePhPosterieur"/>
+        <DataOneOf>
+            <Literal>e</Literal>
+            <Literal>en</Literal>
+            <Literal>o</Literal>
+            <Literal>ou</Literal>
+            <Literal>u</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#typePhTravail"/>
+        <DataOneOf>
+            <Literal>Ch</Literal>
+            <Literal>Ze</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
