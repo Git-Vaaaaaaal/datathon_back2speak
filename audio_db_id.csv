@@ -1,0 +1,408 @@
+audio_id,collecteur_id,speaker,age,sexe,position,type_item,decision,traduction
+P02_S02_ISO01.wav,P02,S02,45,F,,isole,correct,ch
+P02_S02_P04.wav,P02,S02,45,F,,phrase,correct,chocolat au lait
+P02_S02_P06.wav,P02,S02,45,F,,phrase,correct,chocolat au lait
+P02_S02_SYL01.wav,P02,S02,45,F,,syllabe,correct,cha
+P02_S02_SYL02.wav,P02,S02,45,F,,syllabe,correct,chi
+P02_S02_F01.wav,P02,S02,45,F,final,mot,correct,bouche
+P02_S02_F02.wav,P02,S02,45,F,final,mot,correct,fleche
+P02_S02_F03.wav,P02,S02,45,F,final,mot,correct,niche
+P02_S02_F04.wav,P02,S02,45,F,final,mot,correct,manche
+P02_S02_I03.wav,P02,S02,45,F,initial,mot,correct,chocolat au lait
+P02_S02_I04.wav,P02,S02,45,F,initial,mot,correct,chaussure
+P02_S02_M04.wav,P02,S02,45,F,median,mot,correct,t-shirt
+P02_S03_ISO01.wav,P02,S03,12,F,,isole,correct,ch
+P02_S03_P04.wav,P02,S03,12,F,,phrase,correct,chocolat au lait
+P02_S03_P06.wav,P02,S03,12,F,,phrase,correct,chocolat au lait
+P02_S03_SYL01.wav,P02,S03,12,F,,syllabe,correct,cha
+P02_S03_SYL02.wav,P02,S03,12,F,,syllabe,correct,chi
+P02_S03_F01.wav,P02,S03,12,F,final,mot,correct,bouche
+P02_S03_F02.wav,P02,S03,12,F,final,mot,correct,fleche
+P02_S03_F03.wav,P02,S03,12,F,final,mot,correct,niche
+P02_S03_F04.wav,P02,S03,12,F,final,mot,correct,manche
+P02_S03_I03.wav,P02,S03,12,F,initial,mot,correct,chocolat au lait
+P02_S03_I04.wav,P02,S03,12,F,initial,mot,correct,chaussure
+P02_S03_M04.wav,P02,S03,12,F,median,mot,correct,t-shirt
+P04_S01_M01.wav,P04,S01,37,F,median,mot,correct,machine
+P04_S01_I05.wav,P04,S01,37,F,initial,mot,correct,chapeau
+P04_S01_I01.wav,P04,S01,37,F,initial,mot,correct,chat
+P04_S01_I03.wav,P04,S01,37,F,initial,mot,correct,La fourchette tombe
+P04_S01_P03.wav,P04,S01,37,F,,phrase,correct,Charriot de courses
+P04_S01_P09.wav,P04,S01,37,F,,phrase,correct,La fourchette tombe
+P04_S01_SYL03.wav,P04,S01,37,F,,syllabe,correct,cho
+P04_S01_SYL02.wav,P04,S01,37,F,,syllabe,correct,chi
+P04_S01_M03.wav,P04,S01,37,F,median,mot,correct,échelle
+P04_S01_P05.wav,P04,S01,37,F,,phrase,correct,La fourchette tombe
+P04_S01_M02.wav,P04,S01,37,F,median,mot,correct,bouchon
+P04_S01_F05.wav,P04,S01,37,F,final,mot,correct,vache
+P04_S02_M01.wav,P04,S02,38,F,median,mot,correct,machine
+P04_S02_I05.wav,P04,S02,38,F,initial,mot,correct,chapeau
+P04_S02_I01.wav,P04,S02,38,F,initial,mot,correct,chat
+P04_S02_I03.wav,P04,S02,38,F,initial,mot,correct,La fourchette tombe
+P04_S02_P03.wav,P04,S02,38,F,,phrase,correct,Charriot de courses
+P04_S02_P09.wav,P04,S02,38,F,,phrase,correct,La fourchette tombe
+P04_S02_SYL03.wav,P04,S02,38,F,,syllabe,correct,cho
+P04_S02_SYL02.wav,P04,S02,38,F,,syllabe,correct,chi
+P04_S02_M03.wav,P04,S02,38,F,median,mot,correct,échelle
+P04_S02_P05.wav,P04,S02,38,F,,phrase,correct,La fourchette tombe
+P04_S02_M02.wav,P04,S02,38,F,median,mot,correct,bouchon
+P04_S02_F05.wav,P04,S02,38,F,final,mot,correct,vache
+P07_S01_SYL02.wav,P07,S01,54,F,,syllabe,correct,chi
+P07_S01_P06.wav,P07,S01,54,F,,phrase,correct,Il lave le tee-shirt
+P07_S01_I04.wav,P07,S01,54,F,initial,mot,correct,chaussure
+P07_S01_P08.wav,P07,S01,54,F,,phrase,correct,Il dort dans la niche
+P07_S01_SYL03.wav,P07,S01,54,F,,syllabe,correct,cho
+P07_S01_M03.wav,P07,S01,54,F,median,mot,correct,échelle
+P07_S01_I05.wav,P07,S01,54,F,initial,mot,correct,chapeau
+P07_S01_M05.wav,P07,S01,54,F,median,mot,correct,fourchette
+P07_S01_F05.wav,P07,S01,54,F,final,mot,correct,vache
+P07_S01_M02.wav,P07,S01,54,F,median,mot,correct,bouchon
+P07_S01_I02.wav,P07,S01,54,F,initial,mot,correct,Il dort dans la niche
+P07_S01_F06.wav,P07,S01,54,F,final,mot,correct,poche
+P08_S01_M02.wav,P08,S01,31,F,median,mot,correct,bouchon
+P08_S01_I03.wav,P08,S01,31,F,initial,mot,correct,Elle colorie une vache
+P08_S01_F06.wav,P08,S01,31,F,final,mot,correct,poche
+P08_S01_I05.wav,P08,S01,31,F,initial,mot,correct,chapeau
+P08_S01_P01.wav,P08,S01,31,F,,phrase,correct,chouquette a la crème
+P08_S01_P07.wav,P08,S01,31,F,,phrase,correct,Il dort dans la niche
+P08_S01_F05.wav,P08,S01,31,F,final,mot,correct,vache
+P08_S01_SYL02.wav,P08,S01,31,F,,syllabe,correct,chi
+P08_S01_F04.wav,P08,S01,31,F,final,mot,correct,manche
+P08_S01_P03.wav,P08,S01,31,F,,phrase,correct,Charriot de courses
+P08_S01_I02.wav,P08,S01,31,F,initial,mot,correct,Elle colorie une vache
+P08_S01_F02.wav,P08,S01,31,F,final,mot,correct,fleche
+P11_S02_F05.wav,P11,S02,26,F,final,mot,correct,vache
+P11_S02_M06.wav,P11,S02,26,F,median,mot,correct,rocher
+P11_S02_M03.wav,P11,S02,26,F,median,mot,correct,échelle
+P11_S02_P09.wav,P11,S02,26,F,,phrase,correct,Le garcon peche
+P11_S02_M05.wav,P11,S02,26,F,median,mot,correct,fourchette
+P11_S02_I01.wav,P11,S02,26,F,initial,mot,correct,chat
+P11_S02_I05.wav,P11,S02,26,F,initial,mot,correct,chapeau
+P11_S02_P04.wav,P11,S02,26,F,,phrase,correct,La fourchette tombe
+P11_S02_I04.wav,P11,S02,26,F,initial,mot,correct,chaussure
+P11_S02_F02.wav,P11,S02,26,F,final,mot,correct,fleche
+P11_S02_F06.wav,P11,S02,26,F,final,mot,correct,poche
+P11_S02_P03.wav,P11,S02,26,F,,phrase,correct,Charriot de courses
+P11_S03_F05.wav,P11,S03,63,F,final,mot,correct,vache
+P11_S03_M06.wav,P11,S03,63,F,median,mot,correct,rocher
+P11_S03_M03.wav,P11,S03,63,F,median,mot,correct,échelle
+P11_S03_P09.wav,P11,S03,63,F,,phrase,correct,Le garcon peche
+P11_S03_M05.wav,P11,S03,63,F,median,mot,correct,fourchette
+P11_S03_I01.wav,P11,S03,63,F,initial,mot,correct,chat
+P11_S03_I05.wav,P11,S03,63,F,initial,mot,correct,chapeau
+P11_S03_P04.wav,P11,S03,63,F,,phrase,correct,La fourchette tombe
+P11_S03_I04.wav,P11,S03,63,F,initial,mot,correct,chaussure
+P11_S03_F02.wav,P11,S03,63,F,final,mot,correct,fleche
+P11_S03_F06.wav,P11,S03,63,F,final,mot,correct,poche
+P11_S03_P03.wav,P11,S03,63,F,,phrase,correct,Charriot de courses
+P08_S03_M02.wav,P08,S03,5,F,median,mot,correct,bouchon
+P08_S03_I03.wav,P08,S03,5,F,initial,mot,correct,Elle colorie une vache
+P08_S03_F06.wav,P08,S03,5,F,final,mot,correct,poche
+P08_S03_I05.wav,P08,S03,5,F,initial,mot,correct,chapeau
+P08_S03_P01.wav,P08,S03,5,F,,phrase,correct,chouquette a la crème
+P08_S03_P07.wav,P08,S03,5,F,,phrase,correct,Il dort dans la niche
+P08_S03_F05.wav,P08,S03,5,F,final,mot,correct,vache
+P08_S03_SYL02.wav,P08,S03,5,F,,syllabe,correct,chi
+P08_S03_F04.wav,P08,S03,5,F,final,mot,correct,manche
+P08_S03_P03.wav,P08,S03,5,F,,phrase,correct,Charriot de courses
+P08_S03_I02.wav,P08,S03,5,F,initial,mot,correct,Elle colorie une vache
+P08_S03_F02.wav,P08,S03,5,F,final,mot,correct,fleche
+P08_S04_M02.wav,P08,S04,63,F,median,mot,correct,bouchon
+P08_S04_I03.wav,P08,S04,63,F,initial,mot,correct,Elle colorie une vache
+P08_S04_F06.wav,P08,S04,63,F,final,mot,correct,poche
+P08_S04_I05.wav,P08,S04,63,F,initial,mot,correct,chapeau
+P08_S04_P01.wav,P08,S04,63,F,,phrase,correct,chouquette a la crème
+P08_S04_P07.wav,P08,S04,63,F,,phrase,correct,Il dort dans la niche
+P08_S04_F05.wav,P08,S04,63,F,final,mot,correct,vache
+P08_S04_SYL02.wav,P08,S04,63,F,,syllabe,correct,chi
+P08_S04_F04.wav,P08,S04,63,F,final,mot,correct,manche
+P08_S04_P03.wav,P08,S04,63,F,,phrase,correct,Charriot de courses
+P08_S04_I02.wav,P08,S04,63,F,initial,mot,correct,Elle colorie une vache
+P08_S04_F02.wav,P08,S04,63,F,final,mot,correct,fleche
+P09_S01_SYL01.wav,P09,S01,45,F,,syllabe,correct,cha
+P09_S01_I02.wav,P09,S01,45,F,initial,mot,correct,Le garcon peche
+P09_S01_I04.wav,P09,S01,45,F,initial,mot,correct,chaussure
+P09_S01_I05.wav,P09,S01,45,F,initial,mot,correct,chapeau
+P09_S01_M01.wav,P09,S01,45,F,median,mot,correct,machine
+P09_S01_M03.wav,P09,S01,45,F,median,mot,correct,échelle
+P09_S01_M05.wav,P09,S01,45,F,median,mot,correct,fourchette
+P09_S01_F02.wav,P09,S01,45,F,final,mot,correct,fleche
+P09_S01_F05.wav,P09,S01,45,F,final,mot,correct,vache
+P09_S01_P01.wav,P09,S01,45,F,,phrase,correct,chouquette a la crème
+P09_S01_P02.wav,P09,S01,45,F,,phrase,correct,chocolat au lait
+P09_S01_P08.wav,P09,S01,45,F,,phrase,correct,Elle colorie une vache
+P09_S02_SYL01.wav,P09,S02,13,F,,syllabe,correct,cha
+P09_S02_I02.wav,P09,S02,13,F,initial,mot,correct,Le garcon peche
+P09_S02_I04.wav,P09,S02,13,F,initial,mot,correct,chaussure
+P09_S02_I05.wav,P09,S02,13,F,initial,mot,correct,chapeau
+P09_S02_M01.wav,P09,S02,13,F,median,mot,correct,machine
+P09_S02_M03.wav,P09,S02,13,F,median,mot,correct,échelle
+P09_S02_M05.wav,P09,S02,13,F,median,mot,correct,fourchette
+P09_S02_F02.wav,P09,S02,13,F,final,mot,correct,fleche
+P09_S02_F05.wav,P09,S02,13,F,final,mot,correct,vache
+P09_S02_P01.wav,P09,S02,13,F,,phrase,correct,chouquette a la crème
+P09_S02_P02.wav,P09,S02,13,F,,phrase,correct,chocolat au lait
+P09_S02_P08.wav,P09,S02,13,F,,phrase,correct,Elle colorie une vache
+P13_S01_ISO01.wav,P13,S01,47,F,,isole,correct,ch
+P13_S01_P06.wav,P13,S01,47,F,,phrase,correct,Il lave le tee-shirt
+P13_S01_P07.wav,P13,S01,47,F,,phrase,correct,Il dort dans la niche
+P13_S01_P09.wav,P13,S01,47,F,,phrase,correct,Le garcon peche
+P13_S01_SYL03.wav,P13,S01,47,F,,syllabe,correct,cho
+P13_S01_F01.wav,P13,S01,47,F,final,mot,correct,bouche
+P13_S01_F04.wav,P13,S01,47,F,final,mot,correct,manche
+P13_S01_I01.wav,P13,S01,47,F,initial,mot,correct,chat
+P13_S01_I06.wav,P13,S01,47,F,initial,mot,correct,cheval
+P13_S01_M01.wav,P13,S01,47,F,median,mot,correct,machine
+P13_S01_M04.wav,P13,S01,47,F,median,mot,correct,t-shirt
+P13_S01_M06.wav,P13,S01,47,F,median,mot,correct,rocher
+P13_S04_ISO01.wav,P13,S04,17,F,,isole,correct,ch
+P13_S04_P06.wav,P13,S04,17,F,,phrase,correct,Il lave le tee-shirt
+P13_S04_P07.wav,P13,S04,17,F,,phrase,correct,Il dort dans la niche
+P13_S04_P09.wav,P13,S04,17,F,,phrase,correct,Le garcon peche
+P13_S04_SYL03.wav,P13,S04,17,F,,syllabe,correct,cho
+P13_S04_F01.wav,P13,S04,17,F,final,mot,correct,bouche
+P13_S04_I01.wav,P13,S04,17,F,initial,mot,correct,chat
+P13_S04_I06.wav,P13,S04,17,F,initial,mot,correct,cheval
+P13_S04_M01.wav,P13,S04,17,F,median,mot,correct,machine
+P13_S04_M04.wav,P13,S04,17,F,median,mot,correct,t-shirt
+P13_S04_M06.wav,P13,S04,17,F,median,mot,correct,rocher
+P13_S04_F04.wav,P13,S04,17,F,final,mot,correct,manche
+P13_S05_ISO01.wav,P13,S05,45,F,,isole,correct,ch
+P13_S05_P06.wav,P13,S05,45,F,,phrase,correct,Il lave le tee-shirt
+P13_S05_P07.wav,P13,S05,45,F,,phrase,correct,Il dort dans la niche
+P13_S05_P09.wav,P13,S05,45,F,,phrase,correct,Le garcon peche
+P13_S05_SYL03.wav,P13,S05,45,F,,syllabe,correct,cho
+P13_S05_F01.wav,P13,S05,45,F,final,mot,correct,bouche
+P13_S05_I01.wav,P13,S05,45,F,initial,mot,correct,chat
+P13_S05_I06.wav,P13,S05,45,F,initial,mot,correct,cheval
+P13_S05_M01.wav,P13,S05,45,F,median,mot,correct,machine
+P13_S05_M04.wav,P13,S05,45,F,median,mot,correct,t-shirt
+P13_S05_M06.wav,P13,S05,45,F,median,mot,correct,rocher
+P13_S05_F04.wav,P13,S05,45,F,final,mot,correct,manche
+P05_S03_F02.wav,P05,S03,24,F,final,mot,correct,fleche
+P05_S03_M05.wav,P05,S03,24,F,median,mot,correct,fourchette
+P05_S03_M03.wav,P05,S03,24,F,median,mot,correct,échelle
+P05_S03_l01.wav,P05,S03,24,F,initial,mot,correct,Le bouchon est bleu
+P05_S03_SYL01.wav,P05,S03,24,F,initial,syllabe,correct,cha
+P05_S03_F04.wav,P05,S03,24,F,final,mot,correct,manche
+P05_S03_P02.wav,P05,S03,24,F,initial,phrase,correct,chocolat au lait
+P05_S03_SYL02.wav,P05,S03,24,F,initial,syllabe,correct,chi
+P05_S03_P03.wav,P05,S03,24,F,initial,phrase,correct,Charriot de courses
+P05_S03_P04.wav,P05,S03,24,F,median,phrase,correct,La fourchette tombe
+P05_S03_I06.wav,P05,S03,24,F,initial,mot,correct,cheval
+P05_S03_SYL03.wav,P05,S03,24,F,initial,syllabe,correct,cho
+P02_S01_ISO01.wav,P02,S01,44,M,,isole,correct,ch
+P02_S01_P04.wav,P02,S01,44,M,,phrase,correct,chocolat au lait
+P02_S01_P06.wav,P02,S01,44,M,,phrase,correct,chocolat au lait
+P02_S01_SYL01.wav,P02,S01,44,M,,syllabe,correct,cha
+P02_S01_SYL02.wav,P02,S01,44,M,,syllabe,correct,chi
+P02_S01_F01.wav,P02,S01,44,M,final,mot,correct,bouche
+P02_S01_F02.wav,P02,S01,44,M,final,mot,correct,fleche
+P02_S01_F03.wav,P02,S01,44,M,final,mot,correct,niche
+P02_S01_F04.wav,P02,S01,44,M,final,mot,correct,manche
+P02_S01_I03.wav,P02,S01,44,M,initial,mot,correct,chocolat au lait
+P02_S01_I04.wav,P02,S01,44,M,initial,mot,correct,chaussure
+P02_S01_M04.wav,P02,S01,44,M,median,mot,correct,t-shirt
+P04_S03_M01.wav,P04,S03,8,M,median,mot,correct,machine
+P04_S03_I05.wav,P04,S03,8,M,initial,mot,correct,chapeau
+P04_S03_I01.wav,P04,S03,8,M,initial,mot,correct,chat
+P04_S03_I03.wav,P04,S03,8,M,initial,mot,correct,La fourchette tombe
+P04_S03_P03.wav,P04,S03,8,M,,phrase,correct,Charriot de courses
+P04_S03_P09.wav,P04,S03,8,M,,phrase,correct,La fourchette tombe
+P04_S03_SYL03.wav,P04,S03,8,M,,syllabe,correct,cho
+P04_S03_SYL02.wav,P04,S03,8,M,,syllabe,correct,chi
+P04_S03_M03.wav,P04,S03,8,M,median,mot,correct,échelle
+P04_S03_P05.wav,P04,S03,8,M,,phrase,correct,La fourchette tombe
+P04_S03_M02.wav,P04,S03,8,M,median,mot,correct,bouchon
+P04_S03_F05.wav,P04,S03,8,M,final,mot,correct,vache
+P04_S04_M01.wav,P04,S04,5,M,median,mot,correct,machine
+P04_S04_I05.wav,P04,S04,5,M,initial,mot,correct,chapeau
+P04_S04_I03.wav,P04,S04,5,M,initial,mot,distorsion,La fourchette tombe
+P04_S04_P03.wav,P04,S04,5,M,,phrase,correct,Charriot de courses
+P04_S04_P09.wav,P04,S04,5,M,,phrase,correct,La fourchette tombe
+P04_S04_SYL03.wav,P04,S04,5,M,,syllabe,correct,cho
+P04_S04_SYL02.wav,P04,S04,5,M,,syllabe,correct,chi
+P04_S04_M03.wav,P04,S04,5,M,median,mot,correct,échelle
+P04_S04_P05.wav,P04,S04,5,M,,phrase,correct,La fourchette tombe
+P04_S04_M02.wav,P04,S04,5,M,median,mot,correct,bouchon
+P04_S04_F05.wav,P04,S04,5,M,final,mot,correct,vache
+P06_S01_SYL01.wav,P06,S01,37,M,,syllabe,correct,cha
+P06_S01_SYL02.wav,P06,S01,37,M,,syllabe,correct,chi
+P06_S01_I03.wav,P06,S01,37,M,initial,mot,correct,Il lave le tee-shirt
+P06_S01_I04.wav,P06,S01,37,M,initial,mot,correct,chaussure
+P06_S01_I06.wav,P06,S01,37,M,initial,mot,correct,cheval
+P06_S01_M02.wav,P06,S01,37,M,median,mot,correct,bouchon
+P06_S01_F03.wav,P06,S01,37,M,final,mot,correct,niche
+P06_S01_F04.wav,P06,S01,37,M,final,mot,correct,manche
+P06_S01_F05.wav,P06,S01,37,M,final,mot,correct,vache
+P06_S01_P01.wav,P06,S01,37,M,,phrase,correct,chouquette a la crème
+P06_S01_P05.wav,P06,S01,37,M,,phrase,correct,Le bouchon est bleu
+P06_S01_P06.wav,P06,S01,37,M,,phrase,correct,Il lave le tee-shirt
+P06_S02_SYL01.wav,P06,S02,29,M,,syllabe,correct,cha
+P06_S02_SYL02.wav,P06,S02,29,M,,syllabe,correct,chi
+P06_S02_I03.wav,P06,S02,29,M,initial,mot,correct,Il lave le tee-shirt
+P06_S02_I04.wav,P06,S02,29,M,initial,mot,correct,chaussure
+P06_S02_I06.wav,P06,S02,29,M,initial,mot,correct,cheval
+P06_S02_M02.wav,P06,S02,29,M,median,mot,correct,bouchon
+P06_S02_F03.wav,P06,S02,29,M,final,mot,correct,niche
+P06_S02_F04.wav,P06,S02,29,M,final,mot,correct,manche
+P06_S02_F05.wav,P06,S02,29,M,final,mot,correct,vache
+P06_S02_P01.wav,P06,S02,29,M,,phrase,correct,chouquette a la crème
+P06_S02_P05.wav,P06,S02,29,M,,phrase,correct,Le bouchon est bleu
+P06_S02_P06.wav,P06,S02,29,M,,phrase,correct,Il lave le tee-shirt
+P06_S03_SYL01.wav,P06,S03,38,M,,syllabe,correct,cha
+P06_S03_SYL02.wav,P06,S03,38,M,,syllabe,correct,chi
+P06_S03_I03.wav,P06,S03,38,M,initial,mot,correct,Il lave le tee-shirt
+P06_S03_I04.wav,P06,S03,38,M,initial,mot,correct,chaussure
+P06_S03_I06.wav,P06,S03,38,M,initial,mot,correct,cheval
+P06_S03_M02.wav,P06,S03,38,M,median,mot,correct,bouchon
+P06_S03_F03.wav,P06,S03,38,M,final,mot,correct,niche
+P06_S03_F04.wav,P06,S03,38,M,final,mot,correct,manche
+P06_S03_F05.wav,P06,S03,38,M,final,mot,correct,vache
+P06_S03_P01.wav,P06,S03,38,M,,phrase,correct,chouquette a la crème
+P06_S03_P05.wav,P06,S03,38,M,,phrase,correct,Le bouchon est bleu
+P06_S03_P06.wav,P06,S03,38,M,,phrase,correct,Il lave le tee-shirt
+P06_S04_SYL01.wav,P06,S04,4,M,,syllabe,substitution_ch_vers_s ,cha
+P06_S04_SYL02.wav,P06,S04,4,M,,syllabe,substitution_ch_vers_s ,chi
+P06_S04_I03.wav,P06,S04,4,M,initial,mot,distorsion,Il lave le tee-shirt
+P06_S04_I04.wav,P06,S04,4,M,initial,mot,distorsion,chaussure
+P06_S04_I06.wav,P06,S04,4,M,initial,mot,distorsion,cheval
+P06_S04_M02.wav,P06,S04,4,M,median,mot,substitution_ch_vers_s ,bouchon
+P06_S04_F03.wav,P06,S04,4,M,final,mot,indeterminé,niche
+P06_S04_F04.wav,P06,S04,4,M,final,mot,distorsion,manche
+P06_S04_F05.wav,P06,S04,4,M,final,mot,substitution_ch_vers_s ,vache
+P06_S04_P01.wav,P06,S04,4,M,,phrase,substitution_ch_vers_s ,chouquette a la crème
+P06_S04_P05.wav,P06,S04,4,M,,phrase,substitution_ch_vers_s ,Le bouchon est bleu
+P06_S04_P06.wav,P06,S04,4,M,,phrase,substitution_ch_vers_s ,Il lave le tee-shirt
+P08_S02_M02.wav,P08,S02,32,M,median,mot,correct,bouchon
+P08_S02_I03.wav,P08,S02,32,M,initial,mot,correct,Elle colorie une vache
+P08_S02_F06.wav,P08,S02,32,M,final,mot,correct,poche
+P08_S02_I05.wav,P08,S02,32,M,initial,mot,correct,chapeau
+P08_S02_P01.wav,P08,S02,32,M,,phrase,correct,chouquette a la crème
+P08_S02_P07.wav,P08,S02,32,M,,phrase,correct,Il dort dans la niche
+P08_S02_F05.wav,P08,S02,32,M,final,mot,correct,vache
+P08_S02_SYL02.wav,P08,S02,32,M,,syllabe,correct,chi
+P08_S02_F04.wav,P08,S02,32,M,final,mot,correct,manche
+P08_S02_P03.wav,P08,S02,32,M,,phrase,correct,Charriot de courses
+P08_S02_I02.wav,P08,S02,32,M,initial,mot,correct,Elle colorie une vache
+P08_S02_F02.wav,P08,S02,32,M,final,mot,correct,fleche
+P11_S01_F05.wav,P11,S01,28,M,final,mot,correct,vache
+P11_S01_M06.wav,P11,S01,28,M,median,mot,correct,rocher
+P11_S01_M03.wav,P11,S01,28,M,median,mot,correct,échelle
+P11_S01_P09.wav,P11,S01,28,M,,phrase,correct,Le garcon peche
+P11_S01_M05.wav,P11,S01,28,M,median,mot,correct,fourchette
+P11_S01_I01.wav,P11,S01,28,M,initial,mot,correct,chat
+P11_S01_I05.wav,P11,S01,28,M,initial,mot,correct,chapeau
+P11_S01_P04.wav,P11,S01,28,M,,phrase,correct,La fourchette tombe
+P11_S01_I04.wav,P11,S01,28,M,initial,mot,correct,chaussure
+P11_S01_F02.wav,P11,S01,28,M,final,mot,correct,fleche
+P11_S01_F06.wav,P11,S01,28,M,final,mot,correct,poche
+P11_S01_P03.wav,P11,S01,28,M,,phrase,correct,Charriot de courses
+P11_S04_F05.wav,P11,S04,63,M,final,mot,correct,vache
+P11_S04_M06.wav,P11,S04,63,M,median,mot,correct,rocher
+P11_S04_M03.wav,P11,S04,63,M,median,mot,correct,échelle
+P11_S04_P09.wav,P11,S04,63,M,,phrase,correct,Le garcon peche
+P11_S04_M05.wav,P11,S04,63,M,median,mot,correct,fourchette
+P11_S04_I01.wav,P11,S04,63,M,initial,mot,correct,chat
+P11_S04_I05.wav,P11,S04,63,M,initial,mot,correct,chapeau
+P11_S04_P04.wav,P11,S04,63,M,,phrase,correct,La fourchette tombe
+P11_S04_I04.wav,P11,S04,63,M,initial,mot,correct,chaussure
+P11_S04_F02.wav,P11,S04,63,M,final,mot,correct,fleche
+P11_S04_F06.wav,P11,S04,63,M,final,mot,correct,poche
+P11_S04_P03.wav,P11,S04,63,M,,phrase,correct,Charriot de courses
+P09_S03_SYL01.wav,P09,S03,44,M,,syllabe,correct,cha
+P09_S03_I02.wav,P09,S03,44,M,initial,mot,correct,Le garcon peche
+P09_S03_I04.wav,P09,S03,44,M,initial,mot,correct,chaussure
+P09_S03_I05.wav,P09,S03,44,M,initial,mot,correct,chapeau
+P09_S03_M01.wav,P09,S03,44,M,median,mot,correct,machine
+P09_S03_M03.wav,P09,S03,44,M,median,mot,correct,échelle
+P09_S03_M05.wav,P09,S03,44,M,median,mot,correct,fourchette
+P09_S03_F02.wav,P09,S03,44,M,final,mot,correct,fleche
+P09_S03_F05.wav,P09,S03,44,M,final,mot,correct,vache
+P09_S03_P01.wav,P09,S03,44,M,,phrase,correct,chouquette a la crème
+P09_S03_P02.wav,P09,S03,44,M,,phrase,correct,chocolat au lait
+P09_S03_P08.wav,P09,S03,44,M,,phrase,correct,Elle colorie une vache
+P13_S02_ISO01.wav,P13,S02,21,M,,isole,correct,ch
+P13_S02_P06.wav,P13,S02,21,M,,phrase,correct,Il lave le tee-shirt
+P13_S02_P07.wav,P13,S02,21,M,,phrase,correct,Il dort dans la niche
+P13_S02_P09.wav,P13,S02,21,M,,phrase,correct,Le garcon peche
+P13_S02_SYL03.wav,P13,S02,21,M,,syllabe,correct,cho
+P13_S02_F01.wav,P13,S02,21,M,final,mot,correct,bouche
+P13_S02_F04.wav,P13,S02,21,M,final,mot,correct,manche
+P13_S02_I01.wav,P13,S02,21,M,initial,mot,correct,chat
+P13_S02_I06.wav,P13,S02,21,M,initial,mot,correct,cheval
+P13_S02_M01.wav,P13,S02,21,M,median,mot,correct,machine
+P13_S02_M04.wav,P13,S02,21,M,median,mot,correct,t-shirt
+P13_S02_M06.wav,P13,S02,21,M,median,mot,correct,rocher
+P13_S03_ISO01.wav,P13,S03,21,M,,isole,correct,ch
+P13_S03_P06.wav,P13,S03,21,M,,phrase,correct,Il lave le tee-shirt
+P13_S03_P07.wav,P13,S03,21,M,,phrase,correct,Il dort dans la niche
+P13_S03_P09.wav,P13,S03,21,M,,phrase,correct,Le garcon peche
+P13_S03_SYL03.wav,P13,S03,21,M,,syllabe,correct,cho
+P13_S03_F01.wav,P13,S03,21,M,final,mot,correct,bouche
+P13_S03_F04.wav,P13,S03,21,M,final,mot,correct,manche
+P13_S03_I01.wav,P13,S03,21,M,initial,mot,correct,chat
+P13_S03_I06.wav,P13,S03,21,M,initial,mot,correct,cheval
+P13_S03_M01.wav,P13,S03,21,M,median,mot,correct,machine
+P13_S03_M04.wav,P13,S03,21,M,median,mot,correct,t-shirt
+P13_S03_M06.wav,P13,S03,21,M,median,mot,correct,rocher
+P13_S06_ISO01.wav,P13,S06,47,M,,isole,correct,ch
+P13_S06_P06.wav,P13,S06,47,M,,phrase,correct,Il lave le tee-shirt
+P13_S06_P07.wav,P13,S06,47,M,,phrase,correct,Il dort dans la niche
+P13_S06_P09.wav,P13,S06,47,M,,phrase,correct,Le garcon peche
+P13_S06_SYL03.wav,P13,S06,47,M,,syllabe,correct,cho
+P13_S06_F01.wav,P13,S06,47,M,final,mot,correct,bouche
+P13_S06_I01.wav,P13,S06,47,M,initial,mot,correct,chat
+P13_S06_I06.wav,P13,S06,47,M,initial,mot,correct,cheval
+P13_S06_M01.wav,P13,S06,47,M,median,mot,correct,machine
+P13_S06_M04.wav,P13,S06,47,M,median,mot,correct,t-shirt
+P13_S06_M06.wav,P13,S06,47,M,median,mot,correct,rocher
+P13_S06_F04.wav,P13,S06,47,M,final,mot,correct,manche
+P13_S07_ISO01.wav,P13,S07,14,M,,isole,correct,ch
+P13_S07_P06.wav,P13,S07,14,M,,phrase,correct,Il lave le tee-shirt
+P13_S07_P07.wav,P13,S07,14,M,,phrase,correct,Il dort dans la niche
+P13_S07_P09.wav,P13,S07,14,M,,phrase,correct,Le garcon peche
+P13_S07_SYL03.wav,P13,S07,14,M,,syllabe,correct,cho
+P13_S07_F01.wav,P13,S07,14,M,final,mot,correct,bouche
+P13_S07_I01.wav,P13,S07,14,M,initial,mot,correct,chat
+P13_S07_I06.wav,P13,S07,14,M,initial,mot,correct,cheval
+P13_S07_M01.wav,P13,S07,14,M,median,mot,correct,machine
+P13_S07_M04.wav,P13,S07,14,M,median,mot,correct,t-shirt
+P13_S07_M06.wav,P13,S07,14,M,median,mot,correct,rocher
+P13_S07_F04.wav,P13,S07,14,M,final,mot,correct,manche
+P05_S01_F02.wav,P05,S01,25,M,final,mot,correct,fleche
+P05_S01_M05.wav,P05,S01,25,M,median,mot,correct,fourchette
+P05_S01_M03.wav,P05,S01,25,M,median,mot,correct,échelle
+P05_S01_l01.wav,P05,S01,25,M,initial,mot,correct,Le bouchon est bleu
+P05_S01_SYL01.wav,P05,S01,25,M,initial,syllabe,correct,cha
+P05_S01_F04.wav,P05,S01,25,M,final,mot,correct,manche
+P05_S01_P02.wav,P05,S01,25,M,initial,phrase,correct,chocolat au lait
+P05_S01_SYL02.wav,P05,S01,25,M,initial,syllabe,correct,chi
+P05_S01_P03.wav,P05,S01,25,M,initial,phrase,correct,Charriot de courses
+P05_S01_P04.wav,P05,S01,25,M,median,phrase,correct,La fourchette tombe
+P05_S01_I06.wav,P05,S01,25,M,initial,mot,correct,cheval
+P05_S01_SYL03.wav,P05,S01,25,M,initial,syllabe,correct,cho
+P05_S02_F02.wav,P05,S02,23,M,final,mot,correct,fleche
+P05_S02_M05.wav,P05,S02,23,M,median,mot,correct,fourchette
+P05_S02_M03.wav,P05,S02,23,M,median,mot,correct,échelle
+P05_S02_l01.wav,P05,S02,23,M,initial,mot,correct,Le bouchon est bleu
+P05_S02_SYL01.wav,P05,S02,23,M,initial,syllabe,correct,cha
+P05_S02_F04.wav,P05,S02,23,M,final,mot,correct,manche
+P05_S02_P02.wav,P05,S02,23,M,initial,phrase,correct,chocolat au lait
+P05_S02_SYL02.wav,P05,S02,23,M,initial,syllabe,correct,chi
+P05_S02_P03.wav,P05,S02,23,M,initial,phrase,correct,Charriot de courses
+P05_S02_P04.wav,P05,S02,23,M,median,phrase,correct,La fourchette tombe
+P05_S02_I06.wav,P05,S02,23,M,initial,mot,correct,cheval
+P05_S02_SYL03.wav,P05,S02,23,M,initial,syllabe,correct,cho
+P03_S01_F05.wav,P03,S01,38,M,,phrase,correct,vache
+P03_S01_P09.wav,P03,S01,38,M,,phrase,substitution_ch_vers_s ,Charriot de courses
+P03_S01_F02.wav,P03,S01,38,M,final,mot,substitution_ch_vers_s ,fleche
+P03_S01_M04.wav,P03,S01,38,M,median,mot,substitution_ch_vers_s ,t-shirt
+P03_S01_I04.wav,P03,S01,38,M,initial,mot,substitution_ch_vers_s ,chaussure
+P03_S01_M05.wav,P03,S01,38,M,median,mot,substitution_ch_vers_s ,fourchette
+P03_S01_F03.wav,P03,S01,38,M,final,mot,substitution_ch_vers_s ,niche
+P03_S01_I05.wav,P03,S01,38,M,initial,mot,substitution_ch_vers_s ,chapeau
+P03_S01_ISO01.wav,P03,S01,38,M,,isole,substitution_ch_vers_s ,ch
+P03_S01_I02.wav,P03,S01,38,M,initial,mot,substitution_ch_vers_s ,Charriot de courses
+P03_S01_P05.wav,P03,S01,38,M,,phrase,substitution_ch_vers_s ,Charriot de courses
+P04_S04_I01.wav,P04,S04,5,,initial,mot,correct,chat
