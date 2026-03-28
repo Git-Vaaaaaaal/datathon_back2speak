@@ -1,3 +1,6 @@
 .obsidian/
 Donnees/ch/Fichiers audio.zip
 .venv/
+__pycache__
+pre_processing/__pycache__/
+Cleaning/__pycache__/
