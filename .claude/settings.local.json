@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:\\\\Users\\\\manel\\\\Desktop\\\\events\\\\Datathon\\\\datathon_back2speak\\\\ontologie\\\\src\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\manel\\\\Desktop\\\\events\\\\Datathon\\\\datathon_back2speak\\\\ontologie\\\\examples\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\manel\\\\Desktop\\\\events\\\\Datathon\\\\datathon_back2speak\\\\ontologie\\\\output\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''src/ontology_populator.py''\\).read\\(\\)\\); print\\(''ontology_populator.py OK''\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''src/data_processor.py''\\).read\\(\\)\\); print\\(''data_processor.py OK''\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''examples/exemple_utilisation.py''\\).read\\(\\)\\); print\\(''exemple_utilisation.py OK''\\)\")",
+      "Bash(python -c \":*)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import owlready2; print\\(''owlready2'', owlready2.__version__, ''installed''\\)\")",
+      "Bash(python3.11 -c \":*)"
+    ]
+  }
+}
