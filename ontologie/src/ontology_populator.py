@@ -343,7 +343,8 @@ class OntologyPopulator:
         return cat
 
     def _get_or_create_exercise(self, patient: object, ph_travail: object,
-                                 categorie: object, position: str) -> object:
+                                 categorie: object, position: str,
+                                 success_rate: float = 0.0) -> object:
         """
         Récupère ou crée un ExoEnCours pour un patient et un phonème.
 
@@ -352,11 +353,21 @@ class OntologyPopulator:
             Fin    → niveau 2
             Milieu → niveau 1
 
-        Le taux de réussite initial est 0.
+        Args:
+            success_rate : taux de réussite observé (0.0 → 1.0).
+                           Converti en entier 0-100 dans l'ontologie.
+                           Si l'exercice existe déjà, met à jour le taux.
         """
         cache_key = f"{patient.name}__{ph_travail.name}"
+        taux = max(0, min(100, int(round(success_rate * 100))))
+
         if cache_key in self._exercises:
-            return self._exercises[cache_key]
+            exo = self._exercises[cache_key]
+            # Mettre à jour le taux si un nouveau calcul est disponible
+            with self.onto:
+                exo.aTauxReussite.clear()
+                exo.aTauxReussite.append(taux)
+            return exo
 
         niveau = self._LEVEL_MAP.get(position, 1)
 
@@ -365,7 +376,7 @@ class OntologyPopulator:
             name = self._unique_name(f"Exo_{patient.name}_{ph_travail.name}")
             exo = ExoEnCours(name)
             exo.aNiveau.append(niveau)
-            exo.aTauxReussite.append(0)
+            exo.aTauxReussite.append(taux)
             exo.aCategorieMots.append(categorie)
 
         self._exercises[cache_key] = exo
@@ -391,12 +402,13 @@ class OntologyPopulator:
         Args:
             patient_info : Informations sur le patient
             error        : Dictionnaire avec les clés suivantes :
-                - expected_phoneme (str) : phonème attendu en IPA, ex. 'ʃ'
-                - produced_phoneme (str) : phonème produit en IPA, ex. 's'
-                - position         (str) : position dans le mot
-                - preceded_by      (str) : phonème précédent (IPA) ou '(none)'
-                - followed_by      (str) : phonème suivant (IPA) ou '(none)'
-                - reference_ipa    (str) : mot de référence en IPA (optionnel)
+                - expected_phoneme (str)   : phonème attendu en IPA, ex. 'ʃ'
+                - produced_phoneme (str)   : phonème produit en IPA, ex. 's'
+                - position         (str)   : position dans le mot
+                - preceded_by      (str)   : phonème précédent (IPA) ou '(none)'
+                - followed_by      (str)   : phonème suivant (IPA) ou '(none)'
+                - success_rate     (float) : taux de réussite 0.0–1.0 (optionnel, défaut=0)
+                - reference_ipa    (str)   : mot de référence en IPA (optionnel)
                 - produced_ipa     (str) : mot produit en IPA (optionnel)
         """
         # --- Normaliser la position ---
@@ -405,7 +417,8 @@ class OntologyPopulator:
 
         expected   = error.get("expected_phoneme", "?")
         preceded   = error.get("preceded_by", "(none)")
-        followed   = error.get("followed_by", "(none)")
+        followed     = error.get("followed_by", "(none)")
+        success_rate = float(error.get("success_rate", 0.0))
 
         with self.onto:
             # 1. Patient
@@ -431,9 +444,9 @@ class OntologyPopulator:
             if ph_travail not in categorie.aPhoneme:
                 categorie.aPhoneme.append(ph_travail)
 
-            # 6. Exercice en cours
+            # 6. Exercice en cours (avec taux de réussite réel)
             exo = self._get_or_create_exercise(
-                patient, ph_travail, categorie, position
+                patient, ph_travail, categorie, position, success_rate
             )
 
             # 7. Lier patient → exercice
