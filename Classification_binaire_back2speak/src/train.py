@@ -38,7 +38,7 @@ SCORERS = {
     "f1":        make_scorer(f1_score, zero_division=0),
     "precision": make_scorer(precision_score, zero_division=0),
     "recall":    make_scorer(recall_score, zero_division=0),
-    "roc_auc":   make_scorer(roc_auc_score, needs_proba=True),
+    "roc_auc":   make_scorer(roc_auc_score, response_method='predict_proba'),
 }
 
 

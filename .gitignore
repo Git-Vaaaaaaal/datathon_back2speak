@@ -2,3 +2,8 @@
 Donnees/ch/Fichiers audio.zip
 .claude/
 .vscode/
+.venv/
+wav2vec/__pycache__
+pre_processing/__pycache__
+Cleaning/__pycache__
+Classification_binaire_back2speak/__pycache__

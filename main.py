@@ -20,8 +20,15 @@ Modules utilisés :
 from __future__ import annotations
 
 import importlib.util
+import io
 import sys
 import argparse
+
+# Force UTF-8 stdout/stderr on Windows to avoid UnicodeEncodeError with special chars
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -51,7 +58,8 @@ def _charger_wav2vec() -> bool:
             "wav2vec_main", ROOT / "wav2vec" / "main.py"
         )
         mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)      # exécute configure_espeak()
+        sys.modules["wav2vec_main"] = mod  # nécessaire pour @dataclass
+        spec.loader.exec_module(mod)       # exécute configure_espeak()
         _w2v = mod
         WAV2VEC_AVAILABLE = True
         return True

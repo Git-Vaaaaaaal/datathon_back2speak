@@ -18,128 +18,85 @@ Le premier phonème ciblé est la consonne fricative palatale **ʃ** (comme dans
 
 | Dossier / Fichier | Rôle |
 |---|---|
+| `main.py` | Orchestrateur du pipeline complet (7 étapes) |
+| `Cleaning/cleaning_main.py` | Nettoyage audio par lot : filtrage, normalisation, post-traitement |
+| `Cleaning/filtre.py` | Filtre passe-bande et réduction de bruit |
+| `Cleaning/normalisateur.py` | Normalisation RMS / peak |
 | `pre_processing/mfa_phoneme_extractor.py` | Pipeline MFA complet : aligne audio + transcription, génère TextGrids, extrait les segments ʃ en `.wav` |
 | `pre_processing/audio_extractor.py` | Extraction de phonèmes/mots depuis un TextGrid existant (`pydub`, `tgt`) |
 | `pre_processing/data_augmentation.py` | Augmentation spectrale : déplacement du centroïde et boost des HF fricatives, génère N variantes par fichier |
 | `pre_processing/csv_database_extractor.py` | Mise en forme du CSV de la base de données |
-| `model/dataset_wav2vec.py` | Chargement du dataset structuré par classe → `DatasetDict` HuggingFace, audio 16 kHz |
-| `model/wav2vec.py` | Fine-tuning `facebook/wav2vec2-base` (TF/Keras) pour classification audio |
-| `model/rnn_audio.py` | LSTM sur features Mel-spectrogramme + MFCC (PyTorch) |
-| `model/machine_learning.py` | Extraction de features classiques (`librosa`) pour SVM / Random Forest |
-| `audio_db.csv` | Base annotée : `audio_id`, `speaker`, `age`, `sexe`, `position`, `type_item` (isolé/syllabe/mot/phrase), `decision` (correct/incorrect) |
+| `Classification_binaire_back2speak/src/features.py` | Extraction de 200+ features acoustiques via `librosa` (MFCC, centroïde, ZCR, RMS, chroma…) |
+| `Classification_binaire_back2speak/src/train.py` | Entraînement SVM / Random Forest avec validation croisée |
+| `Classification_binaire_back2speak/src/evaluate.py` | Métriques (Accuracy, F1, AUC), courbe ROC, matrice de confusion |
+| `Classification_binaire_back2speak/src/data_loader.py` | Chargement et jointure `audio_db_id.csv` ↔ fichiers audio |
+| `wav2vec/main.py` | Analyse phonémique fine via `Cnam-LMSSC/wav2vec2-french-phonemizer` : alignement, détection d'erreurs, score de prononciation |
+| `ontologie/src/ontology_populator.py` | Peuplement de l'ontologie orthophonique OWL (intégration pipeline à venir) |
+| `audio_db_id.csv` | Base annotée : `audio_id`, `speaker`, `age`, `sexe`, `position`, `type_item`, `decision` (correct/incorrect) |
 
-**Blocs à connecter (pipeline non encore câblé) :**
-- `mfa_phoneme_extractor.py` → segments `.wav` ʃ → `dataset_wav2vec.py` ou loader LSTM
-- `data_augmentation.py` → enrichissement du split `train/` avant entraînement
-- Sorties des modèles → ontologie orthophonique (à implémenter) → résultats structurés
-
-## Comment on fait
+## Pipeline complet (`main.py`)
 
 ```mermaid
-graph LR
+graph TD
 
-    %% Définition des styles (couleurs et bordures)
+    classDef source  fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000
+    classDef prep    fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    classDef ml      fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000
+    classDef w2v     fill:#e8eaf6,stroke:#3949ab,stroke-width:2px,color:#000
+    classDef out     fill:#fce4ec,stroke:#c62828,stroke-width:2px,color:#000
+    classDef onto    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
 
-    classDef source fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000
+    RAW([Audio brut\nDonnees/ch/Fichiers audio]):::source
 
-    classDef prep fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
-
-    classDef model fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000
-
-    classDef logic fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
-
-    classDef goal fill:#ffebee,stroke:#d32f2f,stroke-width:2px,color:#000
-
-
-    %% Section Données
-
-    subgraph Data ["📊 Data & Préparation"]
-
-        direction TB
-
-        A([🎵 Audio .wav\n+ transcription .txt]):::source -->|MFA french_mfa| B[Extraction phonème ʃ\nmfa_phoneme_extractor.py]:::prep
-
-        B --> C[Segments audio ʃ correct/incorrect]:::prep
-
-        C --> SEG{Format features}:::prep
-
-        SEG --> SPE[Spectrogrammes Mel\n+ MFCC]:::prep
-
-        SEG --> FOU[Features Fourier\nZCR · BER · centroïde spectral]:::prep
-
-        E[(📂 audio_db.csv\nannoté correct/incorrect)]:::source --> F[Data Augmentation\ndata_augmentation.py]:::prep
-
-        F --> F1[Déplacement centroïde spectral]:::prep
-
-        F --> F2[Boost HF fricatives > 4 kHz]:::prep
-
+    subgraph Step1 ["[1] Nettoyage — Cleaning/"]
+        CLN[cleaning_main.py\nfiltrage · normalisation · post-traitement]:::prep
     end
 
-
-    %% Section IA
-
-    subgraph IA ["🧠 Intelligence Artificielle"]
-
-        direction TB
-
-        G([⚙️ Features Extraction\ndataset_wav2vec.py]):::model --> H[Fine-tuning / Transfer Learning]:::model
-
-        H --> I{Classification\ncorrect / incorrect}:::model
-
-        I --> I1[**ML :** SVM, Random Forest\nmachine_learning.py]:::model
-
-        I --> I2[**DL :** LSTM Mel+MFCC\nrnn_audio.py]:::model
-
-        I --> I3[**Attention :** Wav2Vec2-base\nwav2vec.py]:::model
-
+    subgraph Step2 ["[2] Extraction MFA — pre_processing/"]
+        MFA[mfa_phoneme_extractor.py\nalignement forcé french_mfa]:::prep
+        SEG[Segments ʃ .wav\nmfa_segments/]:::prep
     end
 
-
-    %% Section Ontologie et Validation
-
-    subgraph Logic ["⚖️ Ontologie & Validation"]
-
-        direction TB
-
-        J((Ontologie\northophonique)):::logic -- "Auto-alimentation" --> J
-
-        K([✅ Validation de la décision]):::logic
-
+    subgraph Step3 ["[3] Labels"]
+        CSV[(audio_db_id.csv\ncorrect / incorrect)]:::source
+        DL[data_loader.py\njointure CSV ↔ audio]:::prep
     end
 
-
-    %% Section Objectifs
-
-    subgraph Objectives ["🎯 Objectifs / Résultats"]
-
-        direction TB
-
-        L1[📌 Type d'erreur\nsubstitution · distorsion · omission]:::goal
-
-        L2[📈 Évaluation globale\nscore de prononciation]:::goal
-
-        L3[🔢 Nombre d'erreurs]:::goal
-
-        L4[📍 Localisation dans le mot\ninitiale · médiale · finale]:::goal
-
+    subgraph Step4 ["[4] Augmentation — pre_processing/"]
+        AUG[data_augmentation.py\ndéplacement centroïde · boost HF >4 kHz\nN variantes par fichier]:::prep
     end
 
+    subgraph Step5 ["[5] Classification ML — Classification_binaire_back2speak/src/"]
+        FEAT[features.py\nMFCC · centroïde · ZCR · RMS · chroma · contrast\n~200 features / clip]:::ml
+        TRAIN[train.py\nSVM · Random Forest\nvalidation croisée k-fold]:::ml
+        EVAL[evaluate.py\nAccuracy · F1 · AUC · ROC · confusion matrix]:::ml
+    end
 
-    %% Connexions transversales (Le Pipeline)
+    subgraph Step6 ["[6] Analyse wav2vec — wav2vec/"]
+        W2V[main.py\nCnam-LMSSC/wav2vec2-french-phonemizer\nalignement phonémique · détection erreurs\nscore de prononciation 0–100]:::w2v
+    end
 
-    SPE & FOU & F1 & F2 -->|Données traitées| G
+    subgraph Step7 ["[7] Résultats"]
+        PNG1[comparison_metrics.png\nAccuracy · F1 · AUC tous modèles]:::out
+        PNG2[comparison_confusion_matrices.png\nML vs wav2vec]:::out
+    end
 
-    I1 & I2 & I3 -->|Prédictions| J
+    ONTO["ontologie/\nontology_populator.py\n(intégration à venir)"]:::onto
 
-    J --> K
-
-    K --> L1
-
-    K --> L2
-
-    K --> L3
-
-    K --> L4
+    RAW --> CLN
+    CLN --> MFA
+    MFA --> SEG
+    SEG & CSV --> DL
+    DL --> AUG
+    AUG --> FEAT
+    FEAT --> TRAIN
+    TRAIN --> EVAL
+    DL --> W2V
+    EVAL --> PNG1
+    EVAL --> PNG2
+    W2V --> PNG1
+    W2V --> PNG2
+    EVAL & W2V -.->|prédictions futures| ONTO
 ```
 
 [Exemple de données public](https://lbourdois.github.io/blog/audio/dataset_audio_fr/)
