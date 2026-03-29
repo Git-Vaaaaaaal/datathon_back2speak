@@ -1,0 +1,28 @@
+# ── Audio processing ──────────────────────────────────────────
+numpy
+scipy
+soundfile
+librosa
+pydub          # conversion M4A (requiert ffmpeg dans le PATH)
+
+# ── Data ──────────────────────────────────────────────────────
+pandas
+
+# ── Pre-processing ────────────────────────────────────────────
+praatio        # TextGrid (MFA)
+tgt            # TextGrid I/O (audio_extractor)
+
+# ── Machine Learning classique ────────────────────────────────
+scikit-learn
+matplotlib
+seaborn
+ipython
+
+# ── Deep Learning ─────────────────────────────────────────────
+torch
+torchaudio
+tensorflow
+
+# ── HuggingFace (wav2vec2) ────────────────────────────────────
+transformers
+datasets
