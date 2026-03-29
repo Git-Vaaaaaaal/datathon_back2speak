@@ -108,7 +108,7 @@ def etape_extraction_phonemes(audio_dir: Path) -> Path:
         print(f"      [SKIP] MFA non disponible : {e}")
         return audio_dir
 
-    seg_dir = audio_dir.parent / (audio_dir.name + " segments")
+    seg_dir = ROOT / "mfa_segments"
     seg_dir.mkdir(parents=True, exist_ok=True)
     extracted, skipped = 0, 0
 
@@ -145,15 +145,9 @@ def etape_extraction_phonemes(audio_dir: Path) -> Path:
 def etape_labels(label_csv: Path, audio_dir: Path) -> pd.DataFrame:
     print(f"\n[3/7] Chargement des labels depuis {label_csv.name}")
     from src.data_loader import load_labels
-    from audio_extractor import add_audio_path_column
 
     df = load_labels(str(label_csv), str(audio_dir))
-
-    missing = df["audio_path"].isna().sum()
-    if missing > 0:
-        print(f"      Résolution de {missing} chemins manquants (audio_extractor)…")
-        df = add_audio_path_column(df, id_col="audio_id", audio_dir=str(audio_dir))
-        df = df.dropna(subset=["audio_path"])
+    df = df.dropna(subset=["audio_path"])
 
     print(f"      {len(df)} fichiers | {df['label'].sum()} corrects / {(df['label'] == 0).sum()} incorrects")
     return df
